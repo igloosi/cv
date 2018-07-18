@@ -28,6 +28,18 @@
             margin: 0 0 0.5em 0;
             max-width: 75ch;
         }
+        .print {
+           display: none;
+        }
+        @media print {
+            body {
+                width: 80%
+                margin: 0;
+            }
+            .print {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -36,6 +48,8 @@
 <p><em>Frontend Developer</em></p>
 <h2>Summary</h2>
 <p>Frontend developer, designer, graphic and web design graduate and technology enthusiast.</p>
+<p class="print">07787 599 258 - jani.kraner@gmail.com</p>
+<p class="print">Github: https://github.com/igloosi</p>
 <p>I have a passion for user interface design and user experience, believe in creating the best possible experience on whatever device. Several years’ experience working in various industry sectors, on different technology stacks while working in small and large teams.</p>
 <p>Hands-on experience designing, UI prototyping and back-end integration in a product’s life cycle. I embrace latest tools and technologies and as a Certified Scrum Master I strongly believe in agile development.</p> 
 <p>Currently my interests lie in creating consistent user interfaces through the use of living styleguides, component library driven development and design token solutions.</p>
@@ -46,7 +60,9 @@
  Developed and maintaining: <a href="https://www.gov.uk/design-system">GOV.UK Design System</a><br />
  Developed and maintaining: <a href=https://github.com/alphagov/govuk-frontend">GOV.UK Frontend</a>
  </p>
-<p>Design System Team<br /> GDS Tech Assessor</p>
+<p>GDS Tech Assessor<br />
+ Assessing candidate services for GOV.UK at Alpha, Beta and Live service assessment
+</p>
 <h3>Developer at Tui Interactive Media</h3>
 <p><em>January 2017 - April 2017</em></p>
 <p>Developing and advocating Design Systems and design tokens<br /> Creating web apps in Vue.js, managing designs with <a href="http://brand.ai">brand.ai</a></p>
