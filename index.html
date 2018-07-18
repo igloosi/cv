@@ -39,6 +39,9 @@
             .print {
                 display: block;
             }
+            a[href]:after{
+                content: " [" attr(href) "] ";
+            }
         }
     </style>
 </head>
