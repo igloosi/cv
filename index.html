@@ -1,255 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jani Kraner - Frontend Developer - Interaction Designer</title>
-    <meta name="description" content="frontend developer, interaction designer">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#ffffff">
-    <style>
-      :root {
-        --color-mode: 'light';
-        --color-dark: #212121;
-        --color-dark-alpha: rgba(0, 0, 0, 0.1);
-        --color-light: #efefef;
-        --color-light-alpha: rgba(255, 255, 255, 0.9);
-        --background: #efefef;
-        --text-color: #212121;
-        --link-color: #084c88;
-        --link-dark-color: #48a4f5;
-        --button-background: var(--color-dark);
-        --button-color: var(--color-light);
-        --border-color: var(--color-dark-alpha);
-      }
-
-      body {
-        background: var(--background);
-        color: var(--text-color);
-        transition: background 500ms ease-in-out, color 200ms ease;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        line-height: 1.25;
-        font-size: calc(1rem + 0.2vh + 0.1vw);
-        padding: 0;
-        margin: 0;
-      }
-      main {
-        margin: 0 auto;
-        max-width:60em;
-        padding:2em;
-      }
-      a {
-        color: var(--link-color);
-      }
-      p {
-        margin: 0 0 0.5em 0;
-        max-width: 75ch;
-      }
-      .print {
-          display: none;
-      }
-      @media print {
-        .print {
-            display: block;
-        }
-        a[href]:after{
-            content: " [" attr(href) "] ";
-        }
-      }
-      h1 span {
-        display: block;
-        font-size: 1rem;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --color-mode: 'dark';
-        }
-        
-        :root:not([data-user-color-scheme]) {
-          --background: var(--color-dark);
-          --text-color: var(--color-light);
-          --link-color: var(--link-dark-color);
-          --button-background: var(--color-light);
-          --button-color: var(--color-dark);
-          --border-color: var(--color-light-alpha);
-        }
-      }
-
-      [data-user-color-scheme="dark"] {
-        --background: var(--color-dark);
-        --text-color: var(--color-light);
-        --link-color: var(--link-dark-color);
-        --button-background: var(--color-light-alpha);
-        --button-color: var(--color-dark);
-        --border-color: var(--color-light-alpha);
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        body {
-          scroll-behavior: auto;
-        }
-
-        * {
-          -webkit-animation: none !important;
-          animation: none !important;
-          transition: none !important;
-        }
-      }
-
-      .no-js .user-toggle {
-        display: none;
-      }
-
-      .user-toggle {
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-      }
-
-      .toggle-button {
-        display: inline-flex;
-        background: var(--button-background);
-        color: var(--button-color);
-        border: 1px solid transparent;
-        border-bottom-right-radius: 8px;
-        border-bottom-left-radius: 8px;
-        font: inherit;
-        font-size: 1rem;
-        padding: 0.5rem;
-        transition: background 500ms ease-in-out, color 200ms ease;
-      }
-    </style>
-    <script>
-        // Remove the no JS class so that the button will show
-        document.documentElement.classList.remove('no-js');
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="frontend developer, interaction designer">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="styles.css">
+  <title>Jani Kraner - Frontend Developer - Interaction Designer</title>
 </head>
-
 <body>
-    <div class="user-toggle">
-      <button class="[ toggle-button ] [ js-mode-toggle ]">
-        <span class="[ toggle-button__text ] [ js-mode-toggle-text ]">Enable dark mode</span>
-        <span class="toggle-button__icon" aria-hidden="true"></span>
-      </button>
-    </div>
-<main>
-  <h1>Jani Kraner<span><em>Frontend Developer</em></span>
-  </h1>
-  <h2>Summary</h2>
-  <p>Frontend developer, designer, graphic and web design graduate and technology enthusiast.</p>
-  <p class="print">
-  Contact: jani@kraner.dev <br />
-  Github: https://github.com/kr8n3r <br />
-  </p>
-  <p>I have a passion for user interface design and user experience, believe in creating the best possible experience on whatever device. Several years’ experience working in various industry sectors, on different technology stacks while working in small and large teams.</p>
-  <p>Hands-on experience designing, UI prototyping and back-end integration in a product’s life cycle. I embrace latest tools and technologies and as a Certified Scrum Master I strongly believe in agile development.</p> 
-  <p>Currently my interests lie in creating consistent user interfaces through the use of design systems.</p>
-  <h2>Experience</h2>
-  <h3>Frontend Developer at Government Digital Service</h3>
-  <p><em>April 2017 - Present</em></p>
-  <p><strong>GOV.UK Search team</strong> <br />
-    Improving search experience on GOV.UK
-  </p>
-  <p><strong>EU EXIT team</strong><br /> 
-  BEIS Digital - Frontend architecture &amp; accessibility audits, prototyping, building internal DDAT capabilities
-  </p>
-  <p><strong>GOV.UK accessibility team</strong><br />
-  Making GOV.UK WCAG 2.1 compliant</p>
-  <p><strong>EU EXIT team</strong><br /> 
-  UK Trade Helpdesk service - Frontend development</p>
-  <p><strong>EU EXIT team</strong> <br />
-  UK Emission Trading Registry (alpha) - Interaction Design / Frontend devevelopment</p>  
-  <p><strong>GOV.UK Design System team</strong> <br />
-  Developed and maintained: <a href="https://www.gov.uk/design-system">GOV.UK Design System</a><br />
-  Developed and maintained: <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Frontend</a><br />
-  Maintained: <a href="https://github.com/alphagov/govuk-prototype-kit">GOV.UK Prototype Kit</a>
-  </p>
-  <p><strong>GDS Tech Assessor</strong><br />
-  Assessing candidate services for GOV.UK at Alpha, Beta and Live service assessments
-  </p>
-  <h3>Developer at Tui Interactive Media</h3>
-  <p><em>January 2017 - April 2017</em></p>
-  <p>Developing and advocating Design Systems and design tokens<br /> Creating web apps in Vue.js, managing designs with <a href="http://brand.ai">brand.ai</a></p>
-  <h3>UI Developer at Valtech</h3>
-  <p><em>March 2016 - December 2016</em></p>
-  <p><strong>Schroders</strong><br /> Discovery, feasibility and front-end architecture</p>
-  <p><strong>Smith &amp; Nephew</strong><br /> Delivered HTML templates through a component library / living style guide implementation<br /> More at: <a href="https://pattern-library-kraner.netlify.com/">Fractal pattern library</a></p>
-  <h3>Frontend Developer at TUI Group</h3>
-  <p><em>August 2014 - March 2016</em></p>
-  <p>Part of the small frontend development team that looked after Crystal Ski and Thomson Lakes &amp; Mountains specialist holidays websites.<br /><a href="http://www.crystalski.co.uk">Crystal Ski</a> // <a href="http://www.thomsonlakes.co.uk">Thomson Lakes</a></p>
-  <h3>UI Developer at Milkround (News UK)</h3>
-  <p><em>March 2014 - July 2014</em></p>
-  <p>Sole Frontend developer retrofitting responsive layout.<br />.Net C# web forms (Episerver) in an agile team.</p>
-  <h3>Intermediate Web Developer at BT Expedite (now Aptos)</h3>
-  <p><em>April 2013 - March 2014</em></p>
-  <p>Delivering e-commerce solutions to high street brands.<br /> Member of a small agile team within the web development department working on support cases, bug fixes, 3rd party integration, enhancements and redesigns to tight deadlines and within budget
-      for Liberty of London, Icing, Claire’s, Dunnes Stores, Snow &amp; Rock, Jigsaw and Austin Reed websites.</p>
-  <h3>Frontend Developer at Buckinghamshire New University</h3>
-  <p><em>October 2011 - March 2013</em></p>
-  <p>Worked as a sole front-end developer in the Online Presence Team tasked with migrating the old website onto a .NET platform and designing a visual concept for the next phase. Additionally, prototyped Missenden Abbey website and delivered e-learning courses
-      to WLMHT using Blackboard.</p>
-  <h2>Education</h2>
-  <p><strong>Cambridge School Of Art</strong><br /> BA (Hons), Graphic and Web design, 2008 - 2011</p>
+  <div class="theme-toggle" aria-hidden="true">
+    <button class="theme-toggle__button js-theme-toggle">
+      <span class="theme-toggle__text  js-theme-toggle-text">Enable dark mode</span>
+    </button>
+  </div>
+  <main>
+    <header>
+      <h1 class="heading heading--xl">
+        Jani Kraner<em class="heading__caption">Frontend Developer</em>
+      </h1>
+      <p class="print-only">Contact: jani@kraner.dev</p>
+      <p class="print-only">Github: https://github.com/kr8n3r</p>
+    </header>
+    <section>
+      <h2 class="heading heading--l">Summary</h2>
+      <article>
+        <p>Frontend developer, designer, graphic and web design graduate and technology enthusiast.</p>
+        <p>I have a passion for user interface design and user experience, believe in creating the best possible experience on whatever device. Several years’ experience working in various industry sectors, on different technology stacks while working in small and large teams.</p>
+        <p>Hands-on experience designing, UI prototyping and back-end integration in a product’s life cycle. I embrace latest tools and technologies and as a Certified Scrum Master I strongly believe in agile development.</p> 
+        <p>Currently my interests lie in creating consistent user interfaces through the use of design systems.</p>
+      </article>
+    </section>
+    <section>
+      <h2 class="heading heading--l">Experience</h2>
+      <article>
+        <header>
+          <h3 class="heading heading--m">Frontend Developer at Government Digital Service</h3>
+        </header>
+          <p><em>April 2017 - Present</em></p>
+           <h4 class="heading heading--s">GOV.UK Search team</h4>
+          <p>Improving search experience on GOV.UK.</p>
+           <h4 class="heading heading--s">GDS Experts team</h4> 
+          <p>BEIS Digital - Frontend architecture &amp; accessibility audits, prototyping, building internal DDAT capabilities.</p>
+           <h4 class="heading heading--s">GOV.UK accessibility team</h4>
+          <p>Making GOV.UK WCAG 2.1 compliant</p>
+           <h4 class="heading heading--s">GDS Experts team</h4>
+          <p>UK Trade Helpdesk service - Frontend development.</p>
+           <h4 class="heading heading--s">GDS Experts team</h4>
+          <p> UK Emission Trading Registry (alpha) - Interaction Design / Frontend devevelopment.</p>  
+           <h4 class="heading heading--s">GOV.UK Design System team</h4>
+          <p>Developed and maintained: <a href="https://www.gov.uk/design-system">GOV.UK Design System</a>.</p>
+          <p>Developed and maintained: <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Frontend</a>.</p>
+          <p>Maintained: <a href="https://github.com/alphagov/govuk-prototype-kit">GOV.UK Prototype Kit</a>.</p>
+           <h4 class="heading heading--s">GDS Tech Assessor</h4>
+          <p>Assessing candidate services for GOV.UK at Alpha, Beta and Live service assessments.</p>
+      </article>
+      <article>
+        <header>
+          <h3 class="heading heading--m">Developer at Tui Interactive Media</h3>
+        </header>
+        <p><em>January 2017 - April 2017</em></p>
+        <p>Developing and advocating Design Systems and design tokens.</p>
+        <p>Creating web apps in Vue.js, managing designs with <a href="http://brand.ai">brand.ai</a>.</p>
+      </article>
+      <article>
+        <header>
+          <h3 class="heading heading--m">UI Developer at Valtech</h3>
+        </header>
+        <p><em>March 2016 - December 2016</em></p>
+         <h4 class="heading heading--s">Schroders</h4>
+        <p>Discovery, feasibility and front-end architecture</p>
+         <h4 class="heading heading--s">Smith &amp; Nephew</h4>
+        <p>Delivered HTML templates through a <a href="https://pattern-library-kraner.netlify.com/">component library / living style guide</a> implementation.</p>
+      </article>
+      <article>
+        <header>
+          <h3 class="heading heading--m">Frontend Developer at TUI Group</h3>
+        </header>
+        <p><em>August 2014 - March 2016</em></p>
+        <p>Part of the small frontend development team that looked after <a href="http://www.crystalski.co.uk">Crystal Ski</a>.</p>
+      </article>
+      <article>
+        <header>
+          <h3 class="heading heading--m">UI Developer at Milkround (News UK)</h3>
+        </header>
+        <p><em>March 2014 - July 2014</em></p>
+        <p>Sole Frontend developer retrofitting responsive layout.</p>
+        <p>.Net C# web forms (Episerver) in an agile team.</p>
+      </article>
+      <article>
+        <header>
+          <h3 class="heading heading--m">Web Developer at BT Expedite (now Aptos)</h3>
+        </header>
+        <p><em>April 2013 - March 2014</em></p>
+        <p>Delivering e-commerce solutions to high street brands.</p>
+        <p>Member of a small agile team within the web development department working on support cases, bug fixes, 3rd party integration, enhancements and redesigns to tight deadlines and within budget for Liberty of London, Icing, Claire’s, Dunnes Stores, Snow &amp; Rock, Jigsaw and Austin Reed websites.</p>
+      </article>
+      <article>
+        <header>
+          <h3 class="heading heading--m">Frontend Developer at Buckinghamshire New University</h3>
+        </header>
+        <p><em>October 2011 - March 2013</em></p>
+        <p>Worked as a sole front-end developer in the Online Presence Team tasked with migrating the old website onto a .NET platform and designing a visual concept for the next phase.</p>
+        <p>Additionally, prototyped Missenden Abbey website and delivered e-learning courses to WLMHT using Blackboard.</p>
+      </article>
+    </section>
+    <section>
+      <h2 class="heading heading--l">Education</h2>
+      <article>
+        <header>
+          <h4 class="heading heading--s">Cambridge School Of Art</h4>
+        </header>
+        <p>
+          BA (Hons), Graphic and Web design, 2008 - 2011
+        </p>
+      </article>
+    </section>
   </main>
-  <script>
-      const STORAGE_KEY = 'user-color-scheme';
-      const COLOR_MODE_KEY = '--color-mode';
-
-      const modeToggleButton = document.querySelector('.js-mode-toggle');
-      const modeToggleText = document.querySelector('.js-mode-toggle-text');
-      const getCSSCustomProp = (propKey) => {
-        let response = getComputedStyle(document.documentElement).getPropertyValue(propKey);
-        if (response.length) {
-            response = response.replace(/\'|"/g, '').trim();
-        }
-
-        return response;
-      };
-
-      const applySetting = passedSetting => {
-        let currentSetting = passedSetting || localStorage.getItem(STORAGE_KEY);
-        
-        if(currentSetting) {
-            document.documentElement.setAttribute('data-user-color-scheme', currentSetting);
-            setButtonLabelAndStatus(currentSetting);
-        } else {
-          setButtonLabelAndStatus(getCSSCustomProp(COLOR_MODE_KEY));
-        }
-      }
-
-      const toggleSetting = () => {
-        let currentSetting = localStorage.getItem(STORAGE_KEY);
-      
-        switch(currentSetting) {
-          case null:
-          currentSetting = getCSSCustomProp(COLOR_MODE_KEY) === 'dark' ? 'light' : 'dark';
-          break;
-          case 'light':
-          currentSetting = 'dark';
-          break;
-          case 'dark':
-          currentSetting = 'light';
-          break;
-        }
-        localStorage.setItem(STORAGE_KEY, currentSetting);
-      
-        return currentSetting;
-      }
-
-      const setButtonLabelAndStatus = currentSetting => { 
-        modeToggleText.innerText = `Enable ${currentSetting === 'dark' ? 'light' : 'dark'} mode`;
-      }
-
-      modeToggleButton.addEventListener('click', evt => {
-        evt.preventDefault();
-        
-        applySetting(toggleSetting());
-      });
-
-      applySetting();
-    </script>
+  <script type="module">
+    import { applyTheme } from './theme-toggle.js';
+    document.documentElement.classList.remove('no-js');
+    applyTheme();
+</script>
 </body>
-
 </html>
