@@ -35,7 +35,7 @@
     main {
       margin: 0 auto;
       max-width: 60em;
-      padding: 4em 2em 2em 2em;
+      padding: 2em;
     }
 
     section {
@@ -90,13 +90,10 @@
 
     .theme-toggle {
       position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-      background: linear-gradient(to bottom, var(--background), 85%, transparent);
-      padding-bottom: 2em;
+      left: 0.125em;
+      right: .125em;
+      bottom: 1em;
       text-align: center;
-      transition: background 500ms ease-in-out;
     }
 
     .theme-toggle__button {
@@ -104,11 +101,14 @@
       background: var(--button-background);
       color: var(--button-color);
       border: 1px solid transparent;
-      border-bottom-right-radius: 8px;
-      border-bottom-left-radius: 8px;
+      border-radius: 50%;
       font: inherit;
       font-size: 1rem;
       padding: 0.5rem;
+    }
+    
+    .theme-toggle__text {
+      text-indent: -500em;
     }
 
     .theme-toggle__button:focus {
