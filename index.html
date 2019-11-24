@@ -17,7 +17,7 @@
       --text-color: #212121;
       --link-color: #084c88;
       --link-dark-color: #48a4f5;
-      --svg-background: var(--color-dark);
+      --button-background: var(--color-dark);
       --button-color: var(--color-light);
     }
 
@@ -97,9 +97,9 @@
 
     .theme-toggle__button {
       display: inline-flex;
-      background: none;
+      background: var(--button-background);
       color: var(--button-color);
-      border: 1px solid transparent;
+      border: 0;
       border-radius: 50%;
       font: inherit;
       padding: 0;
@@ -115,7 +115,6 @@
       font-size: 1rem;
       width: 1.5em;
       height: 1.5em;
-      background: var(--svg-background);
     }
 
     .theme-toggle__button:focus {
