@@ -113,6 +113,7 @@
     .theme-toggle__text {
       font-size: 0;
     }
+    
     .theme-toggle__icon {
       font-size: 1rem;
       width: 1.5em;
@@ -122,6 +123,10 @@
 
     .theme-toggle__button:focus {
       outline: 0;
+    }
+    
+    .svg-icon {
+      display: none;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -148,18 +153,15 @@
     }
 
     @media print {
-      body {
-        color: #212121;
-      }
       .print-only {
           display: block;
       }
       a[href]:after{
           content: " [" attr(href) "] ";
       }
-    }
-    .svg-icon {
-      display: none;
+      .theme-toggle {
+        display: none;
+      }
     }
   </style>
 </head>
