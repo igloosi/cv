@@ -90,8 +90,8 @@
 
     .theme-toggle {
       position: fixed;
-      right: .125em;
-      bottom: 1em;
+      right: .75em;
+      bottom: .125em;
       text-align: center;
     }
 
@@ -103,13 +103,16 @@
       border-radius: 50%;
       font: inherit;
       font-size: 1rem;
-      padding: 0.5rem;
-      width: 1em;
-      height: 1em;
+      width: 1.5em;
+      height: 1.5em;
     }
     
     .theme-toggle__text {
       text-indent: -500em;
+    }
+    .theme-toggle__icon {
+      height: 1em;
+      width: 1em;
     }
 
     .theme-toggle__button:focus {
@@ -144,12 +147,18 @@
           content: " [" attr(href) "] ";
       }
     }
+    .svg-icon {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <div class="theme-toggle" aria-hidden="true">
     <button class="theme-toggle__button js-theme-toggle">
       <span class="theme-toggle__text  js-theme-toggle-text">Enable dark mode</span>
+      <svg class="theme-toggle__icon" aria-hidden="true">
+        <use xlink:href="#theme-toggle-icon"></use>
+      </svg>
     </button>
   </div>
   <main>
@@ -260,5 +269,10 @@
     document.documentElement.classList.remove('no-js');
     applyTheme();
   </script>
+  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="theme-toggle-icon" viewBox="0 0 20 20">
+      <path fill="currentColor" d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm0 18V2c4.41 0 8 3.59 8 8s-3.59 8-8 8z"></path>
+    </symbol>
+  </svg>
 </body>
 </html>
