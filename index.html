@@ -153,12 +153,24 @@
     }
 
     @media print {
+      body {
+        color: var(--color-dark);
+      }
+
       .print-only {
           display: block;
       }
-      a[href]:after{
-          content: " [" attr(href) "] ";
+
+      a {
+        font-weight: 700;
+        text-decoration: none;
       }
+
+      a[href]:after{
+        content: " (" attr(href) ") ";
+        font-weight: 400;
+      }
+
       .theme-toggle {
         display: none;
       }
