@@ -155,20 +155,32 @@
     @media print {
       body {
         color: var(--color-dark);
+        font-size: 90%;
       }
 
       .print-only {
           display: block;
       }
 
+      main {
+        padding: 0;
+        width: 75%;
+        margin: 0;
+      }
+
       a {
         font-weight: 700;
         text-decoration: none;
+        display: inline-block;
       }
 
       a[href]:after{
         content: " (" attr(href) ") ";
         font-weight: 400;
+      }
+
+      .heading--s {
+        margin-top: 1em;
       }
 
       .theme-toggle {
